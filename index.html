@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src='car.js'></script>
+<style> circle {fill:lightblue;stroke;black;}</style>
+<style> p {color:red}</style>
+
+
+<head>
+<title>Cars 2017</title>
+</head>
+<body onload='gasoline()'>
+
+<h1>City vs Highway MPG for cars built in 2017</h1>
+<p>Clicking fuel type button to see associated city vs highway MPG plot</p>
+
+<button id='changedata' onclick = "gasoline()">Gasoline</button>
+<button id='changedata' onclick = "diesel()">Diesel</button>
+<button id='changedata' onclick = "electricity()">Electricity</button>
+
+<div id="chart">
+</div>
+
+</body>
+</html>
